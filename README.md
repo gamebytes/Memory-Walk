@@ -24,3 +24,11 @@ Memory Walk is a game in which your memorization and puzzle solving skills are c
 * Underscore.js
 * G5.js
 * canvg
+
+###### Screenshots
+
+<img src="https://dl.dropboxusercontent.com/u/14645664/tablet/Memory%20Walk/Screenshot_2013-10-09-18-15-06.png" />  
+&nbsp;
+<img src="https://dl.dropboxusercontent.com/u/14645664/tablet/Memory%20Walk/Screenshot_2013-10-09-18-20-23.png" />  
+&nbsp;
+<img src="https://dl.dropboxusercontent.com/u/14645664/tablet/Memory%20Walk/Screenshot_2013-10-09-18-19-24.png" />
