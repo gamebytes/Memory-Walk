@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<title>Memory Walk</title>
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+
+		<script type="text/javascript" src="js/libs/prefixfree.js"></script>
+	</head>
+
+	<body class="page-menu intro" onselectstart="return false;">
+
+		<!--==============-->
+		<!--GITHUB RIBBON -->
+		<!--==============-->
+
+		<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+		
+		<!--=====-->
+		<!--INTRO-->
+		<!--=====-->
+
+		<div id="intro">
+			<div id="first_launch">Preparing for first launch ...</div>
+		</div>
+
+
+		<!--====-->
+		<!--MENU-->
+		<!--====-->
+
+		<div id="menu">
+			<div id="logo">
+				<img src="img/logos/memory_walk.png" class="optimalWidth" />
+			</div>
+
+			<div class="optimalWidth" style="margin: 0px auto;">
+				<div id="menuItems">
+					<div id="menu-main">
+						<a class="button" href="#level-select"><span class="icon-th"></span> Level Select</a>
+						<a class="button" href="#achievements"><span class="icon-trophy"></span> Achievements</a>
+						<a class="button" href="#settings"><span class="icon-cog"></span> Settings</a>
+						<a class="button" href="#credits"><span class="icon-group"></span> Credits</a>
+						<a class="button" href="#exit"><span class="icon-signout"></span> Exit</a>
+					</div>
+
+					<div id="menu-level-select">
+						<a class="button" href="#"><span class="icon-chevron-left"></span> Main Menu</a>
+						<a class="button" href="#level-selection:beginner"><span class="icon-github-alt"></span> Beginner</a>
+						<a class="button" href="#level-selection:advanced"><span class="icon-puzzle-piece"></span> Advanced</a>
+						<a class="button" href="#level-selection:hardcore"><span class="icon-skull"></span> Hardcore</a>
+						<a class="button" href="#level-selection:random"><span class="icon-dice"></span> Random</a>
+						<a class="button" href="#level-selection:editor"><span class="icon-th-list"></span> Editor</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--====-->
+		<!--GAME-->
+		<!--====-->
+
+		<div id="game">
+			<table id="stats">
+				<tr>
+					<td><span class="icon-th-large"></span></td>
+					<td id="stats-level">0-0</td>
+				</tr>
+				<tr>
+					<td><span class="icon-heart"></span></td>
+					<td id="stats-lives">2</td>
+				</tr>
+				<!--<tr>
+					<td><span class="icon-time"></span></td>
+					<td id="stats-time">00:30</td>
+				</tr> -->
+			</table>
+
+			<div id="notes">
+				<div id="note_begin" class="note">tap to begin</div>
+				<div id="note_focus" class="note">tap to focus</div>
+			</div>
+
+			<div id="two_d">
+				
+			</div>
+			<div id="three_d">
+				<canvas></canvas>
+			</div>
+		</div>
+
+
+		<!--=======-->
+		<!--MENUBAR-->
+		<!--=======-->
+
+		<div id="menubar">
+			<a id="back" href="#" class="icon-arrow-left"></a>
+			<a id="editor-level-save" class="icon-save"></a>
+			<h1></h1>
+			<a style="opacity: 0; cursor: default;"></a>
+		</div>
+
+
+		<!--=====================-->
+		<!--LEVEL BEGINNER SELECT-->
+		<!--=====================-->
+
+		<div id="level-beginner-select" data-section="beginner" class="level-selection optimalWidth">
+			<a href="#level:beginner:1" class="level"></a>
+			<a href="#level:beginner:2" class="level"></a>
+			<a href="#level:beginner:3" class="level"></a>
+			<a href="#level:beginner:4" class="level"></a>
+			<a href="#level:beginner:5" class="level"></a>
+			<a href="#level:beginner:6" class="level"></a>
+		</div>
+
+
+		<!--=====================-->
+		<!--LEVEL ADVANCED SELECT-->
+		<!--=====================-->
+
+		<div id="level-advanced-select" data-section="advanced" class="level-selection optimalWidth">
+			<a href="#level:advanced:1" class="level"></a>
+			<a href="#level:advanced:2" class="level"></a>
+			<a href="#level:advanced:3" class="level"></a>
+			<a href="#level:advanced:4" class="level"></a>
+		</div>
+
+
+		<!--=====================-->
+		<!--LEVEL HARDCORE SELECT-->
+		<!--=====================-->
+
+		<div id="level-hardcore-select" data-section="hardcore" class="level-selection optimalWidth">
+			<a href="#level:hardcore:1" class="level"></a>
+			<a href="#level:hardcore:2" class="level"></a>
+		</div>
+
+
+		<!--===================-->
+		<!--LEVEL RANDOM SELECT-->
+		<!--===================-->
+
+		<div id="level-random-select" class="optimalWidth">
+			Select tiles to include in your levels:<br><br>
+			<div class="tiles"></div>
+			<a class="button single" href="#level:random">Begin <span class="icon-chevron-sign-right icon-large" style="float: right"></span></a>
+		</div>
+
+
+		<!--===================-->
+		<!--LEVEL EDITOR SELECT-->
+		<!--===================-->
+
+		<div id="level-editor-select" class="optimalWidth">
+			<a class="button-small" href="#level-editor"><span class="icon-plus-sign"></span> New Level</a>
+			<div class="levels"></div>
+		</div>
+
+
+		<!--============-->
+		<!--LEVEL EDITOR-->
+		<!--============-->
+
+		<div id="level-editor">
+			<div class="toolbar"></div>
+			<span class="resize top icon-minus"></span>
+			<span class="resize right icon-plus"></span>
+			<span class="resize bottom icon-plus"></span>
+			<span class="resize left icon-minus"></span>
+		</div>
+
+
+		<!--============-->
+		<!--ACHIEVEMENTS-->
+		<!--============-->
+
+		<div id="achievements" class="optimalWidth">
+		</div>
+
+		<div class="achievement"></div>
+
+
+		<!--========-->
+		<!--SETTINGS-->
+		<!--========-->
+
+		<div id="settings" class="optimalWidth">
+			<div>			
+				<a href="#set:toggle-music"><span class="icon-check"></span> Enable music</a>
+				<a href="#set:toggle-sound-effects"><span class="icon-check"></span> Enable sound effects</a>
+				<!-- <a href="#set:toggle-ads"><span class="icon-check"></span> Display ads</a>	 -->
+			</div>
+			<div>			
+				<a href="#set:rate-app"><span class="icon-star-half-empty"></span> Rate this app</a>
+				<a href="#set:delete-progress"><span class="icon-remove-sign"></span> Delete progress</a>
+				<a href="#set:rebuild-cache"><span class="icon-refresh"></span> Rebuild image cache</a>
+			</div>
+		</div>
+
+
+		<!--=======-->
+		<!--CREDITS-->
+		<!--=======-->
+
+		<div id="credits" class="optimalWidth">
+			<h3>Resources</h3>
+			<div>
+				<b>Music</b>: Leonard Ritter (paniq.cc)<br>
+				<b>SFX</b>: fins &amp; others (freesound.org)<br>
+				<b>Icons</b>: Dave Gandy (fontawesome.io)<br>
+				<b>Additional Icons</b>: Marvin Zerulla
+			</div>
+
+			<h3>Level Designers</h3>
+			<div>
+				Elias Schütt<br>
+				Marvin Zerulla
+			</div>
+
+			<h3>Beta Testers</h3>
+			<div>
+				Marvin Zerulla<br>
+				Sebastian Klein
+			</div>
+
+			<h3>Javascript Libraries</h3>
+			<div>
+				RequireJS, jQuery, fastclick, Prefix free, Underscore.js, G5.js, canvg
+			</div>
+		</div>
+
+
+		<!--===========-->
+		<!--NOW PLAYING-->
+		<!--===========-->
+
+		<div id="now_playing">
+			<span class="icon-music"></span> <b>Now playing:</b> <span id="song"></span>
+		</div>
+
+
+		<!--======-->
+		<!--SCRIPT-->
+		<!--======-->
+
+		<script type="text/javascript" data-main="js/main.js" src="js/libs/require.js"></script>
+	</body>
+</html>

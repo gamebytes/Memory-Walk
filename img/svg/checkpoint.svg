@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px"
+	 height="256px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<g id="Ebene_2">
+	<g id="Ebene_3" style="display:none;">
+		<rect style="display:inline;fill:#1A1A1A;" width="256" height="256"/>
+	</g>
+	<line style="fill:#F2F2F2;" x1="48" y1="32" x2="208" y2="32"/>
+</g>
+<g id="Ebene_1">
+	<polygon style="display:none;fill:#333333;" points="98.182,33 180,33 137.454,108 180,108 98.182,222.818 121.091,138 72,138 	"/>
+	<polygon id="Arrow" style="display:none;fill:#666666;" points="100,56 172,128 100,200 118,128 	"/>
+	<circle id="Checkpoint" style="display:none;fill:#1A1A1A;" cx="128" cy="128" r="64"/>
+	<path id="Checkpoint_1_" style="fill:#1A1A1A;" d="M128,32c-53.02,0-96,42.98-96,96s42.98,96,96,96s96-42.98,96-96
+		S181.02,32,128,32z M128,204c-41.974,0-76-34.026-76-76s34.026-76,76-76s76,34.026,76,76S169.974,204,128,204z"/>
+</g>
+</svg>
